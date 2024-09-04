@@ -1,0 +1,261 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Exercise Frontend Mentor, Product list with cart">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300..700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Frontend Mentor | Product list with cart</title>
+    </head>
+    <body>
+
+    <div class="background"></div>
+
+    <main class="container">
+
+        <h1 class="header-title text-superBold">Desserts</h1>
+
+        <div class="display-section-image">
+
+        <section class="container-section">
+            <picture class="image-container">
+            <source srcset="./images/image-waffle-mobile.jpg" media="(max-width: 47.9375rem)">
+            <source srcset="./images/image-waffle-tablet.jpg" media="(max-width: 89.9375rem)"> 
+            <source srcset="./images/image-waffle-desktop.jpg" media="(min-width: 90rem)">
+            <img class="section-image" src="./images/image-waffle-mobile.jpg" alt="picture of waffle">
+            </picture>
+            <button class="button-container text-semiBold">Add to Cart</button>
+            <h2 class="text section-title">Waffle</h2>
+            <p class="text-semiBold section-text">Waffle with Berries<span class="price">$6.50</span></p>
+        </section>
+
+        <section class="container-section">
+            <picture class="image-container">
+                <source srcset="./images/image-creme-brulee-mobile.jpg" media="(max-width: 47.9375rem)">
+                <source srcset="./images/image-creme-brulee-tablet.jpg" media="(max-width: 89.9375rem)">  
+                <source srcset="./images/image-creme-brulee-desktop.jpg" media="(min-width: 90rem)"> 
+                <img class="section-image" src="./images/image-creme-brulee-mobile.jpg" alt="picture of creme brulee" >
+            </picture>
+            <button class="button-container text-semiBold">Add to Cart</button>
+            <h2 class="text section-title">Crème Brûlée</h2>
+            <p class="text-semiBold section-text">Vanilla Bean Crème Brûlée<span class="price">$7.00</span></p>
+        </section>
+
+        <section class="container-section">
+            <picture class="image-container">
+            <source srcset="./images/image-macaron-mobile.jpg" media="(max-width: 47.9375rem)">
+            <source srcset="./images/image-macaron-tablet.jpg" media="(max-width: 89.9375rem)">
+            <source srcset="./images/image-macaron-desktop.jpg" media="(min-width: 90rem)"> 
+            <img class="section-image" src="./images/image-macaron-mobile.jpg" alt="picture of macaron">
+            </picture>
+            <button class="button-container text-semiBold">Add to Cart</button>
+            <h2 class="text section-title">Macaron</h2>
+            <p class="text-semiBold section-text">Macaron Mix of Five<span class="price">$8.00</span></p>
+        </section>
+        
+        <section class="container-section">
+            <picture class="image-container">
+            <source srcset="./images/image-tiramisu-mobile.jpg" media="(max-width: 47.9375rem)">
+            <source srcset="./images/image-tiramisu-tablet.jpg" media="(max-width: 89.9375rem)">
+            <source srcset="./images/image-tiramisu-desktop.jpg" media="(min-width: 90rem)"> 
+            <img class="section-image" src="./images/image-tiramisu-mobile.jpg" alt="picture of tiramitsu">
+            </picture>
+            <button class="button-container text-semiBold">Add to Cart</button>
+            <h2 class="text section-title">Tiramisu</h2>
+            <p class="text-semiBold section-text">Classic Tiramisu<span class="price">$5.50</span></p>
+        </section>
+        
+        <section class="container-section">
+            <picture class="image-container">
+            <source srcset="./images/image-baklava-mobile.jpg" media="(max-width: 47.9375rem)">
+            <source srcset="./images/image-baklava-tablet.jpg" media="(max-width: 89.9375rem)">
+            <source srcset="./images/image-baklava-desktop.jpg" media="(min-width: 90rem)"> 
+            <img class="section-image" src="./images/image-baklava-mobile.jpg" alt="picture of baklava">
+            </picture>
+            <button class="button-container text-semiBold">Add to Cart</button>
+            <h2 class="text section-title">Baklava</h2>
+            <p class="text-semiBold section-text">Pistachio Baklava<span class="price">$4.00</span></p>
+        </section>
+
+        <section class="container-section">
+            <picture class="image-container">
+            <source srcset="./images/image-meringue-mobile.jpg" media="(max-width: 47.9375rem)">
+            <source srcset="./images/image-meringue-tablet.jpg" media="(max-width: 89.9375rem)">
+            <source srcset="./images/image-meringue-desktop.jpg" media="(min-width: 90rem)"> 
+            <img class="section-image" src="./images/image-meringue-mobile.jpg" alt="picture of meringue">
+            </picture>
+            <button class="button-container text-semiBold">Add to Cart</button>
+            <h2 class="text section-title">Pie</h2>
+            <p class="text-semiBold section-text">Lemon Meringue Pie<span class="price">$5.00</span></p>
+        </section>
+
+        <section class="container-section">
+            <picture class="image-container">
+            <source srcset="./images/image-cake-mobile.jpg" media="(max-width: 47.9375rem)">
+            <source srcset="./images/image-cake-tablet.jpg" media="(max-width: 89.9375rem)">
+            <source srcset="./images/image-cake-desktop.jpg" media="(min-width: 90rem)"> 
+            <img class="section-image" src="./images/image-cake-mobile.jpg" alt="picture of red velvet cake">
+            </picture>
+            <button class="button-container text-semiBold">Add to Cart</button>
+            <h2 class="text section-title">Cake</h2>
+            <p class="text-semiBold section-text">Red Velvet Cake<span class="price">$4.50</span></p>
+        </section>
+
+        <section class="container-section">
+            <picture class="image-container">
+            <source srcset="./images/image-brownie-mobile.jpg" media="(max-width: 47.9375rem)">
+            <source srcset="./images/image-brownie-tablet.jpg" media="(max-width: 89.9375rem)">
+            <source srcset="./images/image-brownie-desktop.jpg" media="(min-width: 90rem)"> 
+            <img class="section-image" src="./images/image-brownie-mobile.jpg" alt="picture of salted caramel brownie" >
+            </picture>
+            <button class="button-container text-semiBold">Add to Cart</button>
+            <h2 class="text section-title">Brownie</h2>
+            <p class="text-semiBold section-text">Salted Caramel Brownie<span class="price">$4.50</span></p>
+        </section>
+
+        <section class="container-section">
+            <picture class="image-container">
+            <source srcset="./images/image-panna-cotta-mobile.jpg" media="(max-width: 47.9375rem)">
+            <source srcset="./images/image-panna-cotta-tablet.jpg" media="(max-width: 89.9375rem)">
+            <source srcset="./images/image-panna-cotta-desktop.jpg" media="(min-width: 90rem)"> 
+            <img class="section-image" src="./images/image-panna-cotta-mobile.jpg" alt="picture of panna cotta" >
+            </picture>
+            <button class="button-container text-semiBold">Add to Cart</button>
+            <h2 class="text section-title">Panna Cotta</h2>
+            <p class="text-semiBold section-text">Vanilla Panna Cotta<span class="price">$6.50</span></p>
+        </section>
+
+        </div>
+
+        <section class="order">
+        <h2 class="text-bold order-title">Your Cart(<span id="number-item">0</span>)</h2>
+        <div class="item-selected">
+            <div id="imageCake">
+            <img class="image-order" src="./images/illustration-empty-cart.svg" alt="piece of cake">
+            <p class="text order-text">Your added items will appear here</p>             
+            </div>
+        </div>
+        </section>
+    
+    </main>
+
+    <script  src="./script.js"></script>
+
+    </body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple HTML page using various tags">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+    <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        /* Container to center content and set max width */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #4A90E2;
+        }
+
+        .header h6 {
+            font-size: 1em;
+            color: #666;
+            margin-top: 0;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            margin-bottom: 40px;
+        }
+
+        /* Image Section */
+        .image-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* List Section */
+        .list-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .list-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .list-section ul {
+            padding-left: 20px;
+        }
+
+        .list-section li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Welcome to My Simple HTML Page</h1>
+            <h6>This is a demonstration of various HTML tags</h6>
+        </header>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Image Section -->
+            <div class="image-section">
+                <img src="data:image/png;base64,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" alt="Sample Image" />
+            </div>
+
+            <!-- List Section -->
+            <div class="list-section">
+                <h2>Things I Like:</h2>
+                <ul>
+                    <li>Learning new technologies</li>
+                    <li>Coding in different languages</li>
+                    <li>Building web applications</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

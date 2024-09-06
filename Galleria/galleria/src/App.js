@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { data } from "./data/data.js";
+import { Home } from "./routes/home/home.component";
+import { Artwork } from "./routes/artwork/artwork.component";
+import { Routes, Route } from "react-router-dom";
+import { Header } from "./components/header/header.component";
+import { constructRoutes } from "./utilities/string.utilities";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route element={<Header />}>
+        <Route path="/" element={<Home artworks={data} />} />
+        {data.map((art, index) => (
+          <Route
+            key={art.name + Math.random()}
+            path={constructRoutes(art.name)}
+            element={
+              <Artwork
+                art={art}
+                nextItem={data[index + 1]}
+                index={index}
+                prevItem={data[index - 1]}
+              />
+            }
+          />
+        ))}
+      </Route>
+    </Routes>
   );
 }
 
